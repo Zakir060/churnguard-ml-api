@@ -1,3 +1,4 @@
+<img width="963" height="444" alt="image" src="https://github.com/user-attachments/assets/08caca2e-48db-4e3b-b080-0a3c5096bc84" />
 # ChurnGuard ML API
 
 [![CI](https://github.com/Zakir060/churnguard-ml-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Zakir060/churnguard-ml-api/actions/workflows/ci.yml)
@@ -48,7 +49,7 @@ flowchart LR
     B --> D[Saved metrics]
     C --> E[FastAPI inference service]
     D --> E
-    E --> F[/predict]
+    E --> F["/predict"]
     E --> G[/model/metrics]
     E --> H[/health]
 ```
