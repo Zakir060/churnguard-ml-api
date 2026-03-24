@@ -1,13 +1,12 @@
-<img width="963" height="444" alt="image" src="https://github.com/user-attachments/assets/08caca2e-48db-4e3b-b080-0a3c5096bc84" />
 # ChurnGuard ML API
 
 [![CI](https://github.com/Zakir060/churnguard-ml-api/actions/workflows/ci.yml/badge.svg)](https://github.com/Zakir060/churnguard-ml-api/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
 ![License](https://img.shields.io/badge/license-MIT-black)
 
-Production-style machine learning API that predicts **customer churn probability** from telecom-style behavioral features.
+Production-style machine learning API for predicting **customer churn probability** from telecom-style behavioral features.
 
 This project is designed as a portfolio-ready example of an **end-to-end ML product**, not just a notebook. It includes:
 
@@ -42,17 +41,18 @@ Customer churn is expensive. The goal of this project is to help a telecom-style
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[Synthetic customer data] --> B[Training pipeline]
-    B --> C[Saved model artifact]
-    B --> D[Saved metrics]
-    C --> E[FastAPI inference service]
-    D --> E
-    E --> F["/predict"]
-    E --> G["/model/info"]
-    E --> H["/model/metrics"]
-    E --> I["/health"]
+```text
+Synthetic customer data
+        ↓
+Training pipeline
+   ├── Saved model artifact
+   └── Saved metrics
+        ↓
+FastAPI inference service
+   ├── /predict
+   ├── /model/info
+   ├── /model/metrics
+   └── /health
 ```
 
 ## Repository structure
