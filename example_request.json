@@ -1,0 +1,10 @@
+{
+  "tenure_months": 18,
+  "monthly_spend": 74.5,
+  "support_tickets": 1,
+  "payment_delay_days": 2,
+  "usage_hours_per_week": 11.5,
+  "contract_type": "annual",
+  "internet_service": "fiber",
+  "is_premium": true
+}
