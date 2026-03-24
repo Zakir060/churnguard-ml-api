@@ -50,8 +50,9 @@ flowchart LR
     C --> E[FastAPI inference service]
     D --> E
     E --> F["/predict"]
-    E --> G[/model/metrics]
-    E --> H[/health]
+    E --> G["/model/info"]
+    E --> H["/model/metrics"]
+    E --> I["/health"]
 ```
 
 ## Repository structure
