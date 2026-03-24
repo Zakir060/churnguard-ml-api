@@ -23,8 +23,9 @@ NUMERIC_FEATURES = [
     "support_tickets",
     "payment_delay_days",
     "usage_hours_per_week",
+    "is_premium",
 ]
-CATEGORICAL_FEATURES = ["contract_type", "internet_service", "is_premium"]
+CATEGORICAL_FEATURES = ["contract_type", "internet_service"]
 TARGET = "churn"
 
 
